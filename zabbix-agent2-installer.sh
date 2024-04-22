@@ -68,8 +68,22 @@ elif [[ $(lsb_release -rs) == "11" ]]; then
     sudo sed -i -e "s/^Server=127.0.0.1$/Server=$zabbix_server/" -e "s/^ServerActive=127.0.0.1$/ServerActive=$zabbix_server_active/" -e "s/^Hostname=Zabbix server$/Hostname=$zabbix_hostname/" /etc/zabbix/zabbix_agent2.conf
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[32mInstallation completed successfully.\e[0m"
-    echo "This script made by Atil and can be found at www.atil.ir"
+    systemctl enable zabbix-agent2
+    echo -e "\033[1;34m  _      ____   _____          _      _____   ____   ____ _______ \033[0m"
+    echo -e "\033[1;34m | |    / __ \ / ____|   /\   | |    |  __ \ / __ \ / __ \__   __|\033[0m"
+    echo -e "\033[1;34m | |   | |  | | |       /  \  | |    | |__) | |  | | |  | | | |   \033[0m"
+    echo -e "\033[1;34m | |   | |  | | |      / /\ \ | |    |  _  /| |  | | |  | | | |   \033[0m"
+    echo -e "\033[1;34m | |___| |__| | |____ / ____ \| |____| | \ \| |__| | |__| | | |   \033[0m"
+    echo -e "\033[1;34m |______\____/ \_____/_/    \_\______|_|  \_\\____/ \____/  |_|   \033[0m"
+    echo -e "\n"
+    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
+    echo -e "\033[1;32mThis script is made by Atil\033[0m"
+
+
+else
+    echo "Unsupported OS or version"
+fi
+
 else
     echo "Unsupported OS or version"
 fi
