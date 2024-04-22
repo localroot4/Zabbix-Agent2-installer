@@ -68,8 +68,8 @@ elif [[ $(lsb_release -rs) == "11" ]]; then
     sudo sed -i -e "s/^Server=127.0.0.1$/Server=$zabbix_server/" -e "s/^ServerActive=127.0.0.1$/ServerActive=$zabbix_server_active/" -e "s/^Hostname=Zabbix server$/Hostname=$zabbix_hostname/" /etc/zabbix/zabbix_agent2.conf
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[34mInstallation completed successfully.\e[0m"
-    echo "This script is written by Atil and can be found at www.atil.ir"
+    echo -e "\e[32mInstallation completed successfully.\e[0m"
+    echo "This script made by Atil and can be found at www.atil.ir"
 else
     echo "Unsupported OS or version"
 fi
