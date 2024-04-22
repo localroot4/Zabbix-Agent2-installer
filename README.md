@@ -1,22 +1,27 @@
+# Zabbix Agent Installation and Configuration Script
 
-**اسکریپت نصب و پیکربندی Zabbix Agent 2
-**_____________
-**توضیحات:
-**این اسکریپت برای نصب و پیکربندی Zabbix Agent 2 بر روی سیستم‌های Ubuntu و Debian طراحی شده است. Zabbix Agent 2 یک نرم‌افزار مانیتورینگ است که امکان بررسی و مانیتورینگ وضعیت سیستم‌ها و سرویس‌ها را از راه دور ارائه می‌دهد.
-____
-**عملکرد:
-**دانلود و نصب بسته‌ی Zabbix Release برای افزودن مخزن Zabbix به سیستم.
-بروزرسانی فهرست بسته‌ها و نصب Zabbix Agent 2 و پلاگین‌های مرتبط.
-جایگزینی تنظیمات مربوط به آدرس Zabbix Server و ServerActive و Hostname در فایل پیکربندی Zabbix Agent 2.
-راه‌اندازی مجدد سرویس Zabbix Agent 2 و فعال‌سازی خودکار پس از بارگذاری سیستم.
-___
-**Zabbix Agent 2 Installation and Configuration Script
-**___
-**Description:
-**This script is designed to install and configure Zabbix Agent 2 on Ubuntu and Debian systems. Zabbix Agent 2 is a monitoring software that allows remote monitoring and management of system and service statuses.
+This script automates the installation and configuration of the Zabbix Agent on Ubuntu and Debian systems.
 
-**Functionality:
-**Downloading and installing the Zabbix Release package to add the Zabbix repository to the system.
-Updating the package list and installing Zabbix Agent 2 and related plugins.
-Replacing the settings related to the Zabbix Server address, ServerActive, and Hostname in the Zabbix Agent 2 configuration file.
-Restarting the Zabbix Agent 2 service and enabling it to start automatically upon system boot.
+## Description
+
+Zabbix Agent is a monitoring software that enables remote monitoring and management of system and service statuses.
+
+## Usage
+
+To install and configure the Zabbix Agent, run the following command with root privileges:
+
+bash <(curl -sL https://raw.githubusercontent.com/localroot4/zabbix/main/zabbix-agent2-installer.sh)
+
+During the installation process, you will be prompted to enter the Zabbix Server address for both Server and ServerActive parameters. Additionally, you can specify the hostname as either "127.0.0.1" or the hostname of your server.
+
+## Features
+
+- Downloads and installs the Zabbix Release package to add the Zabbix repository to the system.
+- Updates the package list and installs Zabbix Agent and related plugins.
+- Replaces the settings related to the Zabbix Server address, ServerActive, and Hostname in the Zabbix Agent configuration file.
+- Restarts the Zabbix Agent service and enables it to start automatically upon system boot.
+
+## Author
+
+This script was written by [Atil](https://atil.ir).
+
