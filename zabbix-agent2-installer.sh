@@ -12,8 +12,19 @@ if [[ $(lsb_release -rs) == "20.04" ]]; then
     sudo sed -i -e "s/^Server=127.0.0.1$/Server=$zabbix_server/" -e "s/^ServerActive=127.0.0.1$/ServerActive=$zabbix_server_active/" -e "s/^Hostname=Zabbix server$/Hostname=$zabbix_hostname/" /etc/zabbix/zabbix_agent2.conf
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[34mInstallation completed successfully.\e[0m"
-    echo "This script is written by Atil and can be found at www.atil.ir"
+    echo -e "\e[34m██▓     ▒█████   ▄████▄   ▄▄▄       ██▓     ██▀███   ▒█████   ▒█████  ▄▄▄█████▓"
+    echo -e "▓██▒    ▒██▒  ██▒▒██▀ ▀█  ▒████▄    ▓██▒    ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒"
+    echo -e "▒██░    ▒██░  ██▒▒▓█    ▄ ▒██  ▀█▄  ▒██░    ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░"
+    echo -e "▒██░    ▒██   ██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    ▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ "
+    echo -e "░██████▒░ ████▓▒░▒ ▓███▀ ░ ▓█   ▓██▒░██████▒░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ "
+    echo -e "░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   "
+    echo -e "░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░    "
+    echo -e "  ░ ░   ░ ░ ░ ▒  ░          ░   ▒     ░ ░     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒           "
+    echo -e "    ░  ░    ░ ░  ░ ░            ░  ░    ░  ░   ░         ░ ░      ░ ░           "
+    echo -e "                 ░                                                               \e[0m"
+    echo -e "\n"
+    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
+    echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
 # Check Ubuntu 22.04 (64-bit)
 elif [[ $(lsb_release -rs) == "22.04" && $(uname -m) == "x86_64" ]]; then
     wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb
@@ -26,8 +37,19 @@ elif [[ $(lsb_release -rs) == "22.04" && $(uname -m) == "x86_64" ]]; then
     sudo sed -i -e "s/^Server=127.0.0.1$/Server=$zabbix_server/" -e "s/^ServerActive=127.0.0.1$/ServerActive=$zabbix_server_active/" -e "s/^Hostname=Zabbix server$/Hostname=$zabbix_hostname/" /etc/zabbix/zabbix_agent2.conf
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[34mInstallation completed successfully.\e[0m"
-    echo "This script is written by Atil and can be found at www.atil.ir"
+    echo -e "\e[34m██▓     ▒█████   ▄████▄   ▄▄▄       ██▓     ██▀███   ▒█████   ▒█████  ▄▄▄█████▓"
+    echo -e "▓██▒    ▒██▒  ██▒▒██▀ ▀█  ▒████▄    ▓██▒    ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒"
+    echo -e "▒██░    ▒██░  ██▒▒▓█    ▄ ▒██  ▀█▄  ▒██░    ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░"
+    echo -e "▒██░    ▒██   ██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    ▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ "
+    echo -e "░██████▒░ ████▓▒░▒ ▓███▀ ░ ▓█   ▓██▒░██████▒░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ "
+    echo -e "░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   "
+    echo -e "░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░    "
+    echo -e "  ░ ░   ░ ░ ░ ▒  ░          ░   ▒     ░ ░     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒           "
+    echo -e "    ░  ░    ░ ░  ░ ░            ░  ░    ░  ░   ░         ░ ░      ░ ░           "
+    echo -e "                 ░                                                               \e[0m"
+    echo -e "\n"
+    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
+    echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
 # Check Ubuntu 22.04 (ARM64)
 elif [[ $(lsb_release -rs) == "22.04" && $(uname -m) == "aarch64" ]]; then
     wget https://repo.zabbix.com/zabbix/6.4/ubuntu-arm64/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb
@@ -40,8 +62,19 @@ elif [[ $(lsb_release -rs) == "22.04" && $(uname -m) == "aarch64" ]]; then
     sudo sed -i -e "s/^Server=127.0.0.1$/Server=$zabbix_server/" -e "s/^ServerActive=127.0.0.1$/ServerActive=$zabbix_server_active/" -e "s/^Hostname=Zabbix server$/Hostname=$zabbix_hostname/" /etc/zabbix/zabbix_agent2.conf
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[34mInstallation completed successfully.\e[0m"
-    echo "This script is written by Atil and can be found at www.atil.ir"
+    echo -e "\e[34m██▓     ▒█████   ▄████▄   ▄▄▄       ██▓     ██▀███   ▒█████   ▒█████  ▄▄▄█████▓"
+    echo -e "▓██▒    ▒██▒  ██▒▒██▀ ▀█  ▒████▄    ▓██▒    ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒"
+    echo -e "▒██░    ▒██░  ██▒▒▓█    ▄ ▒██  ▀█▄  ▒██░    ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░"
+    echo -e "▒██░    ▒██   ██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    ▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ "
+    echo -e "░██████▒░ ████▓▒░▒ ▓███▀ ░ ▓█   ▓██▒░██████▒░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ "
+    echo -e "░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   "
+    echo -e "░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░    "
+    echo -e "  ░ ░   ░ ░ ░ ▒  ░          ░   ▒     ░ ░     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒           "
+    echo -e "    ░  ░    ░ ░  ░ ░            ░  ░    ░  ░   ░         ░ ░      ░ ░           "
+    echo -e "                 ░                                                               \e[0m"
+    echo -e "\n"
+    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
+    echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
 # Check Debian 12
 elif [[ $(lsb_release -rs) == "12" ]]; then
     wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian12_all.deb
@@ -54,8 +87,19 @@ elif [[ $(lsb_release -rs) == "12" ]]; then
     sudo sed -i -e "s/^Server=127.0.0.1$/Server=$zabbix_server/" -e "s/^ServerActive=127.0.0.1$/ServerActive=$zabbix_server_active/" -e "s/^Hostname=Zabbix server$/Hostname=$zabbix_hostname/" /etc/zabbix/zabbix_agent2.conf
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[34mInstallation completed successfully.\e[0m"
-    echo "This script is written by Atil and can be found at www.atil.ir"
+    echo -e "\e[34m██▓     ▒█████   ▄████▄   ▄▄▄       ██▓     ██▀███   ▒█████   ▒█████  ▄▄▄█████▓"
+    echo -e "▓██▒    ▒██▒  ██▒▒██▀ ▀█  ▒████▄    ▓██▒    ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒"
+    echo -e "▒██░    ▒██░  ██▒▒▓█    ▄ ▒██  ▀█▄  ▒██░    ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░"
+    echo -e "▒██░    ▒██   ██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    ▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ "
+    echo -e "░██████▒░ ████▓▒░▒ ▓███▀ ░ ▓█   ▓██▒░██████▒░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ "
+    echo -e "░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   "
+    echo -e "░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░    "
+    echo -e "  ░ ░   ░ ░ ░ ▒  ░          ░   ▒     ░ ░     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒           "
+    echo -e "    ░  ░    ░ ░  ░ ░            ░  ░    ░  ░   ░         ░ ░      ░ ░           "
+    echo -e "                 ░                                                               \e[0m"
+    echo -e "\n"
+    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
+    echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
 # Check Debian 11
 elif [[ $(lsb_release -rs) == "11" ]]; then
     wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
@@ -69,8 +113,19 @@ elif [[ $(lsb_release -rs) == "11" ]]; then
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
     systemctl enable zabbix-agent2
+    echo -e "\e[34m██▓     ▒█████   ▄████▄   ▄▄▄       ██▓     ██▀███   ▒█████   ▒█████  ▄▄▄█████▓"
+    echo -e "▓██▒    ▒██▒  ██▒▒██▀ ▀█  ▒████▄    ▓██▒    ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒"
+    echo -e "▒██░    ▒██░  ██▒▒▓█    ▄ ▒██  ▀█▄  ▒██░    ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░"
+    echo -e "▒██░    ▒██   ██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    ▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ "
+    echo -e "░██████▒░ ████▓▒░▒ ▓███▀ ░ ▓█   ▓██▒░██████▒░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ "
+    echo -e "░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   "
+    echo -e "░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░    "
+    echo -e "  ░ ░   ░ ░ ░ ▒  ░          ░   ▒     ░ ░     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒           "
+    echo -e "    ░  ░    ░ ░  ░ ░            ░  ░    ░  ░   ░         ░ ░      ░ ░           "
+    echo -e "                 ░                                                               \e[0m"
+    echo -e "\n"
+    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
     echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
-
 else
     echo "Unsupported OS or version"
 fi
