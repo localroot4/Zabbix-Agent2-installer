@@ -1,6 +1,6 @@
-# Zabbix Agent Installation and Configuration Script
+# Zabbix Agent 2 Installation and Configuration Script
 
-This script automates the installation and configuration of the Zabbix Agent on Ubuntu and Debian systems.
+This script automates the installation and configuration of the Zabbix Agent on **Ubuntu** and **Debian** systems.
 
 ## Description
 
@@ -10,7 +10,9 @@ Zabbix Agent is a monitoring software that enables remote monitoring and managem
 
 To install and configure the Zabbix Agent, run the following command with root privileges:
 
+```
 bash <(curl -sL https://raw.githubusercontent.com/localroot4/zabbix/main/zabbix-agent2-installer.sh)
+```
 
 During the installation process, you will be prompted to enter the Zabbix Server address for both Server and ServerActive parameters. Additionally, you can specify the hostname as either "127.0.0.1" or the hostname of your server.
 
