@@ -78,9 +78,6 @@ elif [[ $(lsb_release -rs) == "11" ]]; then
     echo -e "\n"
     echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
     echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
-else
-    echo "Unsupported OS or version"
-fi
 
 else
     echo "Unsupported OS or version"
