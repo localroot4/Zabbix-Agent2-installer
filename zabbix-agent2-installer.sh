@@ -69,18 +69,6 @@ elif [[ $(lsb_release -rs) == "11" ]]; then
     systemctl restart zabbix-agent2
     systemctl enable zabbix-agent2
     systemctl enable zabbix-agent2
-    echo -e "\e[34m██▓     ▒█████   ▄████▄   ▄▄▄       ██▓     ██▀███   ▒█████   ▒█████  ▄▄▄█████▓"
-    echo -e "▓██▒    ▒██▒  ██▒▒██▀ ▀█  ▒████▄    ▓██▒    ▓██ ▒ ██▒▒██▒  ██▒▒██▒  ██▒▓  ██▒ ▓▒"
-    echo -e "▒██░    ▒██░  ██▒▒▓█    ▄ ▒██  ▀█▄  ▒██░    ▓██ ░▄█ ▒▒██░  ██▒▒██░  ██▒▒ ▓██░ ▒░"
-    echo -e "▒██░    ▒██   ██░▒▓▓▄ ▄██▒░██▄▄▄▄██ ▒██░    ▒██▀▀█▄  ▒██   ██░▒██   ██░░ ▓██▓ ░ "
-    echo -e "░██████▒░ ████▓▒░▒ ▓███▀ ░ ▓█   ▓██▒░██████▒░██▓ ▒██▒░ ████▓▒░░ ████▓▒░  ▒██▒ ░ "
-    echo -e "░ ▒░▓  ░░ ▒░▒░▒░ ░ ░▒ ▒  ░ ▒▒   ▓▒█░░ ▒░▓  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░▒░▒░   ▒ ░░   "
-    echo -e "░ ░ ▒  ░  ░ ▒ ▒░   ░  ▒     ▒   ▒▒ ░░ ░ ▒  ░  ░▒ ░ ▒░  ░ ▒ ▒░   ░ ▒ ▒░     ░    "
-    echo -e "  ░ ░   ░ ░ ░ ▒  ░          ░   ▒     ░ ░     ░░   ░ ░ ░ ░ ▒  ░ ░ ░ ▒           "
-    echo -e "    ░  ░    ░ ░  ░ ░            ░  ░    ░  ░   ░         ░ ░      ░ ░           "
-    echo -e "                 ░                                                               \e[0m"
-    echo -e "\n"
-    echo -e "\033[1;32mInstallation completed successfully :)\033[0m"
     echo -e "\033[1;32mThis script is written by Atil and can be found at www.atil.ir\033[0m"
 
 else
